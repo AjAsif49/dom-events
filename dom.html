@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        article{
+            border: 5px solid tomato;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+
+        }
+        .special h3{
+
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -14,6 +27,23 @@
             <p>This is the second paragraph.</p>
             <p>Lorem ipsum dolor sit amet.</p>
         </section>
+
+        <article>
+            <h3>article-1</h3>
+            <p class="author">author-1</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta molestias ipsam, voluptatem explicabo officia officiis incidunt suscipit adipisci quibusdam, eius provident temporibus? Facilis doloribus ratione saepe in dignissimos mollitia laborum.</p>
+        </article>
+        <article class="special">
+            <h3>article-2</h3>
+            <p class="author">author-2</p>
+            <p class="description">Error illo corrupti sint tenetur minima quisquam ipsa cumque molestiae mollitia laborum perspiciatis saepe architecto eius ducimus autem blanditiis, temporibus sequi dolore assumenda minus voluptatum reprehenderit unde. Ex, mollitia unde?</p>
+        </article>
+        <article>
+            <h3>article-3</h3>
+            <p class="author">author-3</p>
+            <p class="description">Quidem, deserunt perferendis! Ratione non eius vitae laudantium doloremque obcaecati rem, perferendis nemo consequatur qui sunt est labore iste. Quo facere fuga incidunt dolore laboriosam illum quis corrupti praesentium eos?</p>
+        </article>
+
     </main>
 
     <script>
@@ -21,6 +51,16 @@
         first.style.color = 'green';
         first.style.backgroundColor = 'pink';
         first.style.color = 'green';
+
+
+        var authors = document.getElementsByClassName('author');
+        for(i = 0; i < authors.length; i++){
+            var element = authors[i];
+            element.innerHTML = 'Lekhok-' + (i+1)
+            element.style.backgroundColor = 'lightblue'
+            element.style.margin = '10px'
+        }
+
 
     //  DOM ==> Document Object Model
 
