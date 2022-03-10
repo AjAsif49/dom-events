@@ -10,13 +10,25 @@
     <main>
         <section>
             <h3>Exploring DOM</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, tempora!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p id="first">My first paragraph.</p>
+            <p>This is the second paragraph.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
         </section>
     </main>
 
     <script>
+        var first = document.getElementById('first');
+        first.style.color = 'green';
+        first.style.backgroundColor = 'pink';
+        first.style.color = 'green';
+
+    //  DOM ==> Document Object Model
+
         console.log(document);
     </script>
 </body>
 </html>
+
+
+
+
